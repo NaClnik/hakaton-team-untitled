@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HacatonUntitledTeam_WebApi", "HacatonUntitledTeam_WebApi\HacatonUntitledTeam_WebApi.csproj", "{92C0A241-7A1A-498B-BF6F-81C874727A6A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HacatonUntitledTeam", "HacatonUntitledTeam\HacatonUntitledTeam.csproj", "{5F3C6E91-9C66-47F1-A603-42687D5C08F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{92C0A241-7A1A-498B-BF6F-81C874727A6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{92C0A241-7A1A-498B-BF6F-81C874727A6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{92C0A241-7A1A-498B-BF6F-81C874727A6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{92C0A241-7A1A-498B-BF6F-81C874727A6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F3C6E91-9C66-47F1-A603-42687D5C08F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F3C6E91-9C66-47F1-A603-42687D5C08F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F3C6E91-9C66-47F1-A603-42687D5C08F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F3C6E91-9C66-47F1-A603-42687D5C08F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {83353F46-26FC-494C-B372-528464C46AFE}
+		SolutionGuid = {CD25F4F5-3B67-4A4B-AB2D-B23995DEB3CE}
 	EndGlobalSection
 EndGlobal

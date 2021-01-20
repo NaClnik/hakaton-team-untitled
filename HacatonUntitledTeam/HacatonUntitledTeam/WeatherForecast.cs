@@ -1,6 +1,6 @@
 using System;
 
-namespace HacatonUntitledTeam_WebApi
+namespace HacatonUntitledTeam
 {
     public class WeatherForecast
     {

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace HacatonUntitledTeam_WebApi.Controllers
+namespace HacatonUntitledTeam.Controllers
 {
     [ApiController]
     [Route("[controller]")]
