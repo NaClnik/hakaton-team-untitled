@@ -9,6 +9,9 @@ namespace HacatonUntitledTeam.Services.Parser
         protected readonly HttpClient _client;
         protected readonly IParserSettings _parserSettings;
 
+        // Свойства класса.
+        public string Url { get; set; }
+
         protected HtmlLoader(HttpClient client, IParserSettings parserSettings)
         {
             _client = client;
@@ -16,8 +19,7 @@ namespace HacatonUntitledTeam.Services.Parser
         } // ctor.
 
         // Абстрактные методы.
-        public abstract int Url { get; }
-        public abstract Task<string> GetSourceByPageId(int id);
+        public abstract Task<string> GetSourceByPageIdAsync(int id);
 
     } // IHtmlLoader.
 }

@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Net.Http;
 using System.Threading.Tasks;
 using AngleSharp;
+using HacatonUntitledTeam.Services.Parser.CurrentParsers.RozetkaParser;
 
 namespace HacatonUntitledTeam.Services.Parser
 {
@@ -27,6 +29,7 @@ namespace HacatonUntitledTeam.Services.Parser
         public ParserWorker(IParser<T> parser, IParserSettings parserSettings) : this(parser)
         {
             ParserSettings = parserSettings;
+            HtmlLoader = new RozetkaHtmlLoader(new HttpClient(), parserSettings);
         } // ctor.
 
         // Методы класса.
@@ -48,12 +51,15 @@ namespace HacatonUntitledTeam.Services.Parser
                 if(!IsActive)
                     return;
 
-                var source = await HtmlLoader.GetSourceByPageId(i);
+                // Получаем html страницу.
+                var source = await HtmlLoader.GetSourceByPageIdAsync(i);
 
+                // Создаём объект document для парсинга.
                 var context = BrowsingContext.New(Configuration.Default);
 
                 var document = await context.OpenAsync(req => req.Content(source));
 
+                // Отдаём document парсеру, чтобы он вернул нам данные.
                 var result = Parser.Parse(document);
 
                 // Зажигаем событие "Появились новые данные".
