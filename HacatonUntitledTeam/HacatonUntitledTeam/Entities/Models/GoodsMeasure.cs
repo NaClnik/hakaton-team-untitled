@@ -18,5 +18,14 @@ namespace HacatonUntitledTeam.Entities.Models
         [MaxLength(30)]
         public string Measure { get; set; }
 
+        //Коллекция товаров
+        public virtual ICollection<Goods> Goods { get; set; }
+
+        //Конструктор по умолчаниюю
+        public GoodsMeasure()
+        {
+            Goods = new HashSet<Goods>();
+        }//Goods
+
     }//class GoodsMeasure
 }
